@@ -28,7 +28,7 @@ try {
     <meta name="description" content="thewall" />
     <meta name="keywords" content="thewall" />
     <meta name="author" content="Teun en Rommer" />
-    <link rel="stylesheet" type="text/css" href="home.css" />
+    <link rel="stylesheet" type="text/css" href="style/home.css" />
     <title>TheWall</title>
   </head>
   <body>
@@ -37,7 +37,7 @@ try {
 <?php
 foreach ($statement as $afbeeldingen){?>
 <div class="afbeelding">
-    <img src="img/<?php echo $afbeeldingen['afbeelding'] ?>" class="image"/>
+    <img src="<?php echo $afbeeldingen['afbeelding'] ?>" class="image"/>
 </div>
 
 <?php }?></div>
