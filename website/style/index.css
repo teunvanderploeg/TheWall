@@ -6,36 +6,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header {
-  display: flex;
-  padding: 1em 1em 0em 1em;
-  height: 10vh;
-  margin: auto;
-  align-items: center;
-  transition: ease-in 0.2s;
-  z-index: 10000;
-}
-
-header .logo {
-  display: flex;
-  flex: 1;
-}
-
-header .header-right {
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
-}
-
-.header-right a {
-  text-decoration: none;
-  color: black;
-}
-
-a .active {
-  color: blue;
-}
-
 section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
