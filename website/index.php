@@ -32,17 +32,22 @@ try {
     <title>TheWall</title>
   </head>
   <body>
-
-  <div class="section">
-<?php
-foreach ($statement as $afbeeldingen){?>
-<div class="afbeelding">
-    <img src="<?php echo $afbeeldingen['afbeelding'] ?>" class="image"/>
-</div>
-
-<?php }?></div>
-
-  </body>
+  <header>
+    <h1 class="logo">Jouw Afspeellijst</h1>
+    <div class="header-right">
+      <a class="active" href="#">Home</a>
+      <a href="upload.html">Upload</a>
+      <a href="#">Registreer</a>
+    </div>
+  </header>
+    <section class="tracks">
+    <?php foreach ($statement as $track): ?>
+      <div class="track" id="track-<?php echo $track['id'] ?>">
+        <img src="<?php echo $track['afbeelding'] ?>" alt="<?php echo $track['titel'] ?>"/>
+      </div>
+    <?php endforeach ?>
+    </section>
+</body>
   <script src="javascript.js"></script>
 </html>
 

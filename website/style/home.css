@@ -1,17 +1,61 @@
-* {
+body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  justify-items: center;
+  font-family: 'Roboto', sans-serif;
 }
+
+header {
+  display: flex;
+  padding: 1em 1em 0em 1em;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+  transition: ease-in 0.2s;
+  z-index: 10000;
+}
+
+header .logo {
+  display: flex;
+  flex: 1;
+}
+
+header .header-right {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: black;
+}
+
+a .active {
+  color: blue;
+}
+
 section {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 1em;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-items: center;
+  margin: 1em;
 }
-.afbeelding {
-  width: 100%;
-  padding-bottom: 1em;
+
+img {
+  object-fit: cover;
+  width: 400px;
 }
-.image {
-  width: 100%;
+
+.track {
+  width: 400px;
+  text-align: center;
+  display: block;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem
 }
