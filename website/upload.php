@@ -13,19 +13,21 @@
       enctype="multipart/form-data"
     >
       <h5>Title:</h5>
-      <input type="text" name="titel" /><br />
+      <input require type="text" name="titel" /><br />
       <h5>aurteur:</h5>
-      <input type="text" name="auteur" /><br />
+      <input require type="text" name="auteur" /><br />
       <h5>bijschrift:</h5>
-      <input type="text" name="bijschrift" /><br />
+      <input require type="text" name="bijschrift" /><br />
       <h5>Select image to upload:</h5>
       <input
+      require
         type="file"
         name="fileToUpload"
         id="fileToUpload"
         accept="image/*"
       />
-      <input type="submit" value="fileToUpload" name="submit" />
+      <br>
+      <input type="submit" value="supmit" name="submit" />
     </form>
   </body>
 </html>
