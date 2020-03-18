@@ -6,6 +6,7 @@
     <title>Document</title>
   </head>
   <body>
+    <?php include('header.php'); ?>
     <form
       action="bewaar_afbeelding.php"
       method="post"
