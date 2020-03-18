@@ -11,8 +11,8 @@
     <h1 class="logo">Theme<span>Wall<span></h1>
     <div class="header-right">
       <a class="active" href="#">Home</a>
-      <a href="upload.html">Upload</a>
-      <a href="#">Registreer</a>
+      <a href="upload.php">Upload</a>
+      <a href="register.php">Registreer</a>
     </div>
   </header>
 </body>
