@@ -7,10 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-  <div class="header">
-  <div class="header-text">
-    <a class="" href="index.php">Home</a>
-  </div></div>
+  <?php include('header.php'); ?>
 <h1>Registreren</h1>
 <form action="save_user.php" method="post">
 

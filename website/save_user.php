@@ -34,10 +34,8 @@ try {
 
         $stmt->execute();
 
-        echo "<section>";
-        echo "<h2>Je bent geregistreerd</h2>";
-        echo "<a href='index.php'>back</a>";
-        echo "</section>";
+        header('Location: index.php');
+        exit;
     // } 
 
 } catch (PDOException $e) {
