@@ -3,7 +3,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   justify-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 section {
@@ -17,6 +17,7 @@ section {
 img {
   object-fit: cover;
   width: 400px;
+  box-shadow: 0px 8px 5px 0px gray;
 }
 
 .track {
@@ -27,5 +28,5 @@ img {
 
 p {
   margin: 0;
-  font-size: 1rem
+  font-size: 1rem;
 }

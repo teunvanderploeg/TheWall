@@ -10,7 +10,7 @@
 <header>
     <h1 class="logo">Theme<span>Wall<span></h1>
     <div class="header-right">
-      <a class="active" href="#">Home</a>
+      <a class="active" href="index.php">Home</a>
       <a href="upload.php">Upload</a>
       <a href="register.php">Registreer</a>
     </div>
