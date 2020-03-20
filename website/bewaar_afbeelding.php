@@ -1,4 +1,8 @@
 <?php
+require 'includes/functions.php';
+$dbConnect = dbConnect();
+
+
 $allow = array("jpg", "jpeg", "gif", "png");
 $todir = 'img/';
 $errors = [];
@@ -65,19 +69,13 @@ if (count( $errors )=== 0 ) {
         
         move_uploaded_file( $file_tmp, $final_filename ); 
      
-        $hostname = 'localhost';
-        $username = 'root';
-        $password = '';
-        $database = 'thewall';
-        try {
-            $connection = new PDO('mysql:host=' . $hostname . ';dbname=' . $database, $username, $password);
-            $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
             $titel = filter_var($_POST['titel'], FILTER_SANITIZE_STRING);
             $auteur = filter_var($_POST['auteur'], FILTER_SANITIZE_STRING);
             $bijschrift = filter_var($_POST['bijschrift'], FILTER_SANITIZE_STRING);
             $afbeelding = $final_filename;
             // voorberijden 
-            $stmt = $connection->prepare(
+            $stmt = $dbConnect->prepare(
                 "INSERT INTO afbeeldingen (titel, auteur, bijschrift, afbeelding)
                 VALUES (:titel, :auteur, :bijschrift, :afbeelding)");
                 $stmt->bindParam(':titel', $titel);
@@ -88,13 +86,7 @@ if (count( $errors )=== 0 ) {
 
                 header('Location: index.php');
                 exit;
-            }
-         catch (PDOException $e) {
-            echo 'Fout bij database verbinding:<br>' . $e->getMessage() . ' op regel ' . $e->getLine() . ' in ' . $e->getFile();
-            
-            exit;
         }
-      }
         else{
             echo $file_error;
             exit;
