@@ -1,3 +1,5 @@
+<?php include('header.php'); ?>
+
 <?php
 //Verbindings gegevens instellen
 
@@ -8,7 +10,7 @@ $gebruikersnaam = filter_var($_POST['gebruikersnaam'], FILTER_SANITIZE_STRING);
 $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 $wachtwoord = password_hash($_POST['wachtwoord'], PASSWORD_DEFAULT); 
 
-
+echo '<br>';
 echo 'gebruikersnaam: ';
 echo $gebruikersnaam;
 echo '<br>';
@@ -19,13 +21,13 @@ echo '<br>';
 
 
 
-    $stmt_e = $dbConnect->prepare("SELECT * FROM gebruikers WHERE email= '$email'");
+    $stmt_e = $dbConnect->prepare("SELECT * FROM gebruikers WHERE email = :email ");
 
-    $params = [
+    $params_e = [
        'email' => $email
     ];
 
-    $stmt_e->execute($params);
+    $stmt_e->execute($params_e);
 
     if($stmt_e->rowCount() > 0){
       echo "Deze email bestaat al";
@@ -33,19 +35,29 @@ echo '<br>';
     }else{
 
 
-        $stmt_g = $dbConnect->prepare("SELECT * FROM gebruikers WHERE gebruikersnaam = '$gebruikersnaam' ";);
+        $stmt_g = $dbConnect->prepare("SELECT * FROM gebruikers WHERE gebruikersnaam = :gebruikersnaam ");
 
-        $paramss = [
+        $params_g = [
            'gebruikersnaam' => $gebruikersnaam
         ];
     
-        $stmt_g->execute($paramss);
+        $stmt_g->execute($params_g);
     
         if($stmt_g->rowCount() > 0){
           echo "Deze gebruikersnaam bestaat al";
           exit;
         }else{       
     
+
+if($gebruikersnaam == ""){
+  echo "Deze gebruikersnaam is niet goed";
+          exit;
+}else if($email == ""){
+  echo "Deze email is niet goed";
+}else if ($wachtwoord = ""){
+  echo "Deze wachtwoord is niet goed";
+}else{
+
     $stmt = $dbConnect->prepare(
         "INSERT INTO gebruikers (gebruikersnaam, email, wachtwoord)
         VALUES (:gebruikersnaam, :email, :wachtwoord)");
@@ -60,4 +72,5 @@ echo '<br>';
         exit;
     }
     }
+  }
 ?>
