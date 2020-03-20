@@ -54,8 +54,10 @@ if($gebruikersnaam == ""){
           exit;
 }else if($email == ""){
   echo "Deze email is niet goed";
+  exit;
 }else if ($wachtwoord = ""){
-  echo "Deze wachtwoord is niet goed";
+  echo "Dit wachtwoord is niet goed";
+  exit;
 }else{
 
     $stmt = $dbConnect->prepare(
