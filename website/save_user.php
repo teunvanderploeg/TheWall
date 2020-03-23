@@ -55,7 +55,7 @@ if($gebruikersnaam == ""){
 }else if($email == ""){
   echo "Deze email is niet goed";
   exit;
-}else if ($wachtwoord = ""){
+}else if ($wachtwoord == ""){
   echo "Dit wachtwoord is niet goed";
   exit;
 }else{

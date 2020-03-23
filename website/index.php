@@ -8,7 +8,8 @@
     <meta name="keywords" content="thewall" />
     <meta name="author" content="Teun en Romer" />
     <link rel="stylesheet" type="text/css" href="style/index.css" />
-    <title>TheWall</title>
+    <title>Welkom <?php echo $_SESSION['gebruikersnaam'] ?> bij TheWall</h2>
+</title>
   </head>
   <body>
   <?php include('header.php'); ?>
