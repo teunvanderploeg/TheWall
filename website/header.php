@@ -11,7 +11,6 @@
     <div class="header-right">
       <a class="active" href="index.php">Home</a>
       <?php 
-    session_start();
     if (isset( $_SESSION['user_id'] ) ) {
       echo "<a href='upload.php'>Upload</a>";
       echo "<a href='uitlogen.php'>uitlogen</a>";
