@@ -1,3 +1,4 @@
+<?php include('login_check.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,8 +16,6 @@
     >
       <h5>Title:</h5>
       <input require type="text" name="titel" /><br />
-      <h5>aurteur:</h5>
-      <input require type="text" name="auteur" /><br />
       <h5>bijschrift:</h5>
       <input require type="text" name="bijschrift" /><br />
       <h5>Select image to upload:</h5>

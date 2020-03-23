@@ -1,3 +1,4 @@
+<?php include('login_check.php'); ?>
 <?php
 require 'includes/functions.php';
 $dbConnect = dbConnect();
@@ -71,15 +72,15 @@ if (count( $errors )=== 0 ) {
      
 
             $titel = filter_var($_POST['titel'], FILTER_SANITIZE_STRING);
-            $auteur = filter_var($_POST['auteur'], FILTER_SANITIZE_STRING);
+            $gebruiker_id = $_SESSION['user_id'];
             $bijschrift = filter_var($_POST['bijschrift'], FILTER_SANITIZE_STRING);
             $afbeelding = $final_filename;
             // voorberijden 
             $stmt = $dbConnect->prepare(
-                "INSERT INTO afbeeldingen (titel, auteur, bijschrift, afbeelding)
-                VALUES (:titel, :auteur, :bijschrift, :afbeelding)");
+                "INSERT INTO afbeeldingen (titel, gebruiker_id, bijschrift, afbeelding)
+                VALUES (:titel, :gebruiker_id, :bijschrift, :afbeelding)");
                 $stmt->bindParam(':titel', $titel);
-                $stmt->bindParam(':auteur', $auteur);
+                $stmt->bindParam(':gebruiker_id', $gebruiker_id);
                 $stmt->bindParam(':bijschrift', $bijschrift);
                 $stmt->bindParam(':afbeelding', $afbeelding);
                 $stmt->execute();
