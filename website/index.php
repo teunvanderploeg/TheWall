@@ -12,8 +12,6 @@
 
 if ( ! isset( $_SESSION['user_id'] ) ) {echo "";}else{echo $_SESSION['gebruikersnaam'];}?> 
 
-
-
 bij TheWall</title>
   </head>
   <body>
@@ -26,7 +24,6 @@ bij TheWall</title>
     <?php endforeach ?>
     </section>
 </body>
-  <script src="javascript.js"></script>
 </html>
 
 
