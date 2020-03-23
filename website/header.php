@@ -13,7 +13,13 @@
       <a href="login.php">login</a>
       <a href="upload.php">Upload</a>
       <a href="register.php">Registreer</a>
-      <a href="uitlogen.php">uitlogen</a>
+      <?php 
+    session_start();
+
+    if (isset( $_SESSION['user_id'] ) ) {
+      echo "<a href='uitlogen.php'>uitlogen</a>";
+    }
+    ?>
     </div>
   </header>
 </body>
