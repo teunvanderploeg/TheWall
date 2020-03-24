@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 24 mrt 2020 om 12:40
+-- Gegenereerd op: 24 mrt 2020 om 13:20
 -- Serverversie: 10.4.11-MariaDB
 -- PHP-versie: 7.4.1
 
@@ -33,7 +33,7 @@ CREATE TABLE `afbeeldingen` (
   `titel` varchar(128) NOT NULL,
   `bijschrift` varchar(280) NOT NULL,
   `gebruiker_id` int(11) NOT NULL,
-  `datum` date NOT NULL DEFAULT current_timestamp(),
+  `datum` DATETIME DEFAULT current_timestamp(),
   `afbeelding` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
