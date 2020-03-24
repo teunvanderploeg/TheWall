@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   display: flex;
   padding: 1em 1em 0em 1em;
@@ -11,6 +18,7 @@ header {
 
 header .logo {
   display: flex;
+  font-size: 28px;
   flex: 1;
 }
 
@@ -28,8 +36,9 @@ header .header-right {
   text-decoration: none;
   color: black;
 }
+
 .header-right a:hover {
-  text-shadow: 1px 1px 2px lightgreen, 0 0 25px green, 0 0 5px darkgreen;
+  color: rgb(102, 102, 102);
 }
 
 a .active {

@@ -57,7 +57,7 @@ $result = $statement->execute( $params );
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Teun van der Ploeg" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
     <title>Login</title>
   </head>
   <body>
