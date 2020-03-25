@@ -7,7 +7,7 @@
 
 header {
   display: flex;
-  padding: 1em 1em 0em 1em;
+  padding: 0em 1em 0em 1em;
   height: 10vh;
   margin: auto;
   align-items: center;
