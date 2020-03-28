@@ -4,24 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Teun van der Ploeg" />
-    <link rel="stylesheet" type="text/css" href="style/register.css" />
+    <link rel="stylesheet" type="text/css" href="style/center.css" />
   </head>
   <body>
   <?php include('header.php'); ?>
-<h1>Registreren</h1>
 <form action="save_user.php" method="post">
 
-<h5>Email</h5>
+<div class="wrapper">
+<h1>Registreren</h1>
+<div class="form">
+<label for="">Email</label>
 <input required type="text" name="email"><br>
 
-<h5>Gebruikersnaam</h5>
+<label for="">Gebruikersnaam</label>
 <input required type="text" name="gebruikersnaam"><br>
 
-<h5>Wachtwoord:</h5>
+<label for="">Wachtwoord</label>
 <input required type="password" name="wachtwoord"><br>
 
-<br>
 <button type="submit">Registreren</button>
+</div>
+
+</div>
 </form>
 </body>
 </html>

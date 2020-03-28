@@ -57,14 +57,16 @@ $result = $statement->execute( $params );
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Teun van der Ploeg" />
-    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" href="style/center.css" />
     <title>Login</title>
   </head>
   <body>
   <?php include('header.php'); ?>
-    <h1>Inloggen</h1>
     <form action="login.php" method="POST">
-        <p>
+    <div class="wrapper">
+    <h1>Inloggen</h1>
+    <div class="form">
+    <p>
             <label for="">Email</label>
             <input type="text" name="email">
             <?php if ( isset( $errors['email'] ) ): ?>
@@ -78,7 +80,9 @@ $result = $statement->execute( $params );
             <span class="error"><?php echo $errors['wachtwoord'] ?></span>
             <?php endif; ?>
         </p>
+    </div>
         <button type="submit">Inloggen</button>
+    </div>
     </form>
     </body>
 </html>
