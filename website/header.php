@@ -14,6 +14,7 @@
     if (isset( $_SESSION['user_id'] ) ) {
       echo "<a href='upload.php'>Upload</a>";
       echo "<a href='uitlogen.php'>Uitlogen</a>";
+      echo "<a href='personelijke_pagina.php'>Mijn Foto's</a>";
     }else{
       echo "<a href='login.php'>Login</a>";
       echo "<a href='register.php'>Registreer</a>";

@@ -11,4 +11,5 @@ function dbConnect()
     }
     return false;
 }
+
 ?>
