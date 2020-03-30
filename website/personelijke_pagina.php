@@ -19,11 +19,7 @@ $track = $statement->fetch();
     <meta name="keywords" content="thewall" />
     <meta name="author" content="Teun en Romer" />
     <link rel="stylesheet" type="text/css" href="style/index.css" />
-    <title>Welkom <?php
-
-if ( ! isset( $_SESSION['user_id'] ) ) {echo "";}else{echo $_SESSION['gebruikersnaam'];}?> 
-
-bij TheWall</title>
+    <title>Welkom <?php if ( ! isset( $_SESSION['user_id'] ) ) {echo "";}else{echo $_SESSION['gebruikersnaam'];}?> bij TheWall</title>
   </head>
   <body>
   <?php include('header.php'); ?>
