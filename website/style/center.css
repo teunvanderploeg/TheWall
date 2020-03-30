@@ -1,3 +1,9 @@
+body {
+    background-image: url("../img/wobble.png");
+    background-position: right -100px top -190px;
+    background-repeat: no-repeat;
+}
+
 .wrapper {
     text-align: center;
     margin-top: 10em;
@@ -26,7 +32,8 @@ label {
     margin-bottom: 1em;
 }
 
-input[type=text] {
+input[type=text],
+input[type=password] {
     width: 20em;
     padding: 12px 20px;
     margin-bottom: .4em;
@@ -50,7 +57,9 @@ button {
     padding: .7em 2em;
     margin-top: 2em;
     cursor: pointer;
-    background-color: #13c843;
+    background: rgb(19, 200, 67);
+    background: linear-gradient(299deg, rgba(19, 200, 67, 1) 0%, rgba(30, 148, 62, 1) 100%);
     border: none;
     color: white;
+    border-radius: 25px;
 }
