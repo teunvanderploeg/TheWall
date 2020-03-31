@@ -30,7 +30,7 @@ $track = $statement->fetch();
       <div class="track" id="track-<?php echo $afbeeldingen['id'] ?>">
         <img src="<?php echo $afbeeldingen['afbeelding'] ?>" alt="<?php echo $afbeeldingen['titel'] ?>"/>
     <?php if ( $_SESSION['user_id'] === $user_id )  { ?>
-    <a class="deletelink" href='delete.php?id=<?php echo $afbeeldingen['id']; ?>'><i class="fas fa-times deletebutton"></i></a>
+    <a class="deletelink" href='delete.php?id=<?php echo $afbeeldingen['id']; ?>'><i class="fas fa-trash-alt deletebutton"></i></a>
     <?php } ?>
       </div>
     <?php endforeach ?>

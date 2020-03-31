@@ -5,8 +5,10 @@
   width: 100%;
 }
 .deletelink {
-  font-size: 3em;
-  color: red;
+  font-size: 2em;
+  color: gray;
   text-decoration: none;
-  margin-bottom: 5em;
+}
+.deletelink:hover {
+  color: red;
 }
