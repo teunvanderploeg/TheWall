@@ -44,3 +44,10 @@ header .header-right {
 a .active {
   color: blue;
 }
+
+@media screen and (max-width: 560px) {
+  header .header-right {
+    font-size: 60%;
+    margin: 1em;
+  }
+}
