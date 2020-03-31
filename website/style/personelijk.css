@@ -1,0 +1,14 @@
+.tracks {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.deletelink {
+  font-size: 3em;
+  color: red;
+  text-decoration: none;
+  margin-bottom: 5em;
+}
+.deletebutton {
+}
