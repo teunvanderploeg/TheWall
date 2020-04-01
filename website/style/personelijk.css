@@ -12,3 +12,11 @@
 .deletelink:hover {
   color: red;
 }
+.edditlink {
+  font-size: 2em;
+  color: gray;
+  text-decoration: none;
+}
+.edditlink:hover {
+  color: #13c843;
+}

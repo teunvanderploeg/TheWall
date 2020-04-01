@@ -13,12 +13,17 @@
       <?php 
     if (isset( $_SESSION['user_id'] ) ) {
       echo "<a href='upload.php'>Upload</a>";
-      echo "<a href='uitlogen.php'>Uitlogen</a>";
+      if($_SESSION['user_id'] == 1){
+        echo "<a href='adminpage.php'>Admin</a>";
+        } 
       echo "<a href='personelijke_pagina.php'>Mijn Foto's</a>";
+      echo "<a href='uitlogen.php'>Uitlogen</a>";
+ 
     }else{
       echo "<a href='login.php'>Login</a>";
       echo "<a href='register.php'>Registreer</a>";
     }
+    
     ?>
     </div>
   </header>
