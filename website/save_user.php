@@ -69,7 +69,7 @@ if($gebruikersnaam == ""){
         $stmt->bindParam(':wachtwoord', $wachtwoord);
 
         $stmt->execute();
-        echo "Dit account bestaat al";
+        echo "Er is iets fout maar je bent wel registreerd :)";
         header('Location: index.php');
         exit;
     }
