@@ -20,6 +20,10 @@ img {
   width: 400px;
   box-shadow: 0px 8px 5px 0px gray;
 }
+img:hover {
+  animation-name: imggrow;
+  animation-duration: 0.7s;
+}
 
 .track {
   width: 400px;
@@ -30,4 +34,15 @@ img {
 p {
   margin: 0;
   font-size: 1rem;
+}
+@keyframes imggrow {
+  0% {
+    box-shadow: 0px 8px 5px 0px gray;
+  }
+  70% {
+    box-shadow: 5px 16px 10px 5px rgb(36, 36, 36);
+  }
+  100% {
+    box-shadow: 0px 8px 5px 0px gray;
+  }
 }
