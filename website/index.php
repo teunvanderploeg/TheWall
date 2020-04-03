@@ -19,8 +19,10 @@ bij TheWall</title>
     <section class="tracks">
     <?php foreach ($statement as $track): ?>
       <div class="track" id="track-<?php echo $track['id'] ?>">
+      <a href="eenplaatje.php?id=<?php echo $track['id'] ?>">
         <img src="<?php echo $track['afbeelding'] ?>" alt="<?php echo $track['titel'] ?>"/>
-      </div>
+    </a>
+    </div>
     <?php endforeach ?>
     </section>
 </body>

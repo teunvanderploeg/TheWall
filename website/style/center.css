@@ -1,59 +1,82 @@
 .wrapper {
-    text-align: center;
-    margin-top: 10em;
+  text-align: center;
+  margin-top: 10em;
 }
 
 .form {
-    display: block;
+  display: block;
 }
 
 .wrapper h1 {
-    margin-bottom: 1em;
-    text-transform: uppercase;
-    font-size: 37px;
-    color: #13c843;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 37px;
+  color: #13c843;
 }
 
 label {
-    display: block;
-    font-weight: bold;
-    padding: .7em 0;
+  display: block;
+  font-weight: bold;
+  padding: 0.7em 0;
 }
 
 .error {
-    color: red;
-    display: block;
-    margin-bottom: 1em;
+  color: red;
+  display: block;
+  margin-bottom: 1em;
 }
 
-input[type=text],
-input[type=password] {
-    width: 20em;
-    padding: 12px 20px;
-    margin-bottom: .4em;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+input[type="text"],
+input[type="password"] {
+  width: 20em;
+  padding: 12px 20px;
+  margin-bottom: 0.4em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-input[type=submit] {
-    font-size: 18px;
-    padding: .7em 2em;
-    margin-top: 2em;
-    cursor: pointer;
-    background-color: #13c843;
-    border: none;
-    color: white;
+input[type="submit"] {
+  font-size: 18px;
+  padding: 0.7em 2em;
+  margin-top: 2em;
+  cursor: pointer;
+  background-color: #13c843;
+  border: none;
+  color: white;
 }
 
 button {
-    font-size: 18px;
-    padding: .7em 2em;
-    margin-top: 2em;
-    cursor: pointer;
-    background: rgb(19, 200, 67);
-    background: linear-gradient(299deg, rgba(19, 200, 67, 1) 0%, rgba(30, 148, 62, 1) 100%);
-    border: none;
-    color: white;
-    border-radius: 25px;
+  font-size: 18px;
+  padding: 0.7em 2em;
+  margin-top: 2em;
+  cursor: pointer;
+  background: rgb(19, 200, 67);
+  background: linear-gradient(
+    299deg,
+    rgba(19, 200, 67, 1) 0%,
+    rgba(30, 148, 62, 1) 100%
+  );
+  border: none;
+  color: white;
+  border-radius: 25px;
+}
+.eenplaatje {
+  text-align: center;
+  padding-top: 1em;
+}
+.eenplaatje img {
+  width: 50%;
+}
+.bijschrift {
+  padding-top: 3em;
+}
+.titel {
+  padding-top: 0.5em;
+  font-size: 3em;
+}
+@media screen and (max-width: 700px) {
+  .eenplaatje img {
+    width: 100%;
+  }
 }

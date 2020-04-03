@@ -28,7 +28,9 @@ $track = $statement->fetch();
     <section class="tracks">
     <?php foreach ($statement as $afbeeldingen): ?>
       <div class="track" id="track-<?php echo $afbeeldingen['id'] ?>">
+      <a href="eenplaatje.php?id=<?php echo $track['id'] ?>">
         <img src="<?php echo $afbeeldingen['afbeelding'] ?>" alt="<?php echo $afbeeldingen['titel'] ?>"/>
+    </a>
     <?php if ( $_SESSION['user_id'] === $user_id )  { ?>
     <a class="deletelink" href='delete.php?id=<?php echo $afbeeldingen['id']; ?>'><i class="fas fa-trash-alt deletebutton"></i></a>
     <?php } ?>

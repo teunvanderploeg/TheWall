@@ -18,7 +18,9 @@
     <section class="tracks">
     <?php foreach ($statement as $track): ?>
       <div class="track" id="track-<?php echo $track['id'] ?>">
+      <a href="eenplaatje.php?id=<?php echo $track['id'] ?>">
       <img src="<?php echo $track['afbeelding'] ?>" alt="<?php echo $track['titel'] ?>"/>
+    </a>
         <a class="deletelink" href='delete.php?id=<?php echo $track['id']; ?>'><i class="fas fa-trash-alt deletebutton"></i></a>
         <a class="edditlink" href='edit.php?id=<?php echo $track['id']; ?>'><i class="fas fa-edit edditbutton"></i></a>
       </div>
