@@ -20,3 +20,6 @@
 .edditlink:hover {
   color: #13c843;
 }
+body {
+  overflow: hidden;
+}
