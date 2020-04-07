@@ -46,8 +46,16 @@ a .active {
 }
 
 @media screen and (max-width: 560px) {
-  header .header-right {
+  header .header-right a {
     font-size: 60%;
-    margin: 1em;
+    padding: 0.2em;
+  }
+  header .header-right {
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.3em;
+    height: 100%;
+    overflow: hidden;
   }
 }
