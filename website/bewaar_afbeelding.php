@@ -4,7 +4,7 @@ require 'includes/functions.php';
 $dbConnect = dbConnect();
 
 
-$allow = array("jpg", "jpeg", "gif", "png");
+$allow = array("jpg", "jpeg", "gif", "png","bmp", "psd", "raw", "tiff");
 $todir = 'img/';
 $errors = [];
 
@@ -51,7 +51,10 @@ if (count( $errors )=== 0 ) {
            
             $file_extension = $valid_image_types[ $image_type ];
         } else {
-            $errors[] = 'Dit is geen afbeelding!';
+            $errors[] = 'Dit is geen afbeelding of niet de juiste voor maat afbeelding.';
+            echo $errors[0];
+            echo $errors[1];
+            echo $file_error;
         }
     }else{
         echo $file_error;
