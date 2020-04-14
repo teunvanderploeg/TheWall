@@ -4,7 +4,7 @@ require 'includes/functions.php';
 $dbConnect = dbConnect();
 
 
-$allow = array("jpg", "jpeg", "gif", "png","bmp", "psd", "raw", "tiff");
+$allow = array("jpg", "jpeg", "gif", "png", "bmp", "psd", "raw", "tiff");
 $todir = 'img/';
 $errors = [];
 
@@ -20,7 +20,7 @@ switch ( $file_error ) {
         break;
     case UPLOAD_ERR_INI_SIZE:
     case UPLOAD_ERR_FORM_SIZE:
-        $errors[] = 'Dit bestand is te groot, pas php.ini aan';
+        $errors[] = 'Dit bestand is te groot';
         break;
     default:
         $errors[] = 'Onbekeden fout';
@@ -44,7 +44,12 @@ if (count( $errors )=== 0 ) {
         $valid_image_types = [
             1 => 'gif',
             2 => 'jpg',
-            3 => 'png'
+            3 => 'png',
+            4 => 'jpeg',
+            5 => 'bmp',
+            6 => 'psd',
+            7 => 'raw',
+            8 => 'tiff',
         ];
         $image_type        = exif_imagetype( $file_tmp );
         if ( $image_type !== false ) {
@@ -52,12 +57,23 @@ if (count( $errors )=== 0 ) {
             $file_extension = $valid_image_types[ $image_type ];
         } else {
             $errors[] = 'Dit is geen afbeelding of niet de juiste voor maat afbeelding.';
-            echo $errors[0];
-            echo $errors[1];
+            echo "errors:";
             echo $file_error;
+            for ($x = 0; $x < $file_error; $x++) {
+                echo "<h1>";
+                echo $errors[$x];
+                echo "</h1>";
+            }
         }
     }else{
+        echo "errors:";
         echo $file_error;
+
+        for ($x = 0; $x < $file_error; $x++) {
+            echo "<h1>"; 
+            echo $errors[$x];
+            echo "</h1>";
+        }
         exit;
     }
     if($file_size > 2097152){
