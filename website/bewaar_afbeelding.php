@@ -1,5 +1,7 @@
 <?php include('login_check.php'); ?>
 <?php
+echo "<a href='upload.php'>back</a>        ";
+
 require 'includes/functions.php';
 $dbConnect = dbConnect();
 
@@ -111,5 +113,6 @@ if (count( $errors )=== 0 ) {
             echo $file_error;
             exit;
         }
-      
+
+        
 ?>
