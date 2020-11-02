@@ -10,6 +10,7 @@ Dit is de styletile:
 <br>
 
 Dit zijn de Wireframes:
+<br>
 <img src="documentatie/iPhone%20X-XS-11%20Pro%20–%201.png" height="300" />
 <img src="documentatie/iPhone%20X-XS-11%20Pro%20–%202.png" height="300" />
 <img src="documentatie/iPhone%20X-XS-11%20Pro%20–%204.png" height="300" />
