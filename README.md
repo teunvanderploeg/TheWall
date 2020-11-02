@@ -5,10 +5,11 @@ Het was de bedoeling om een soort socialmedia platform te maken waarop mensen fo
 
 
 Dit is de styletile:
+<br>
 <img src="documentatie/Styletile.png" height="300" />
 <br>
 
-Dit zijn de Wireframes 
+Dit zijn de Wireframes:
 <img src="documentatie/iPhone%20X-XS-11%20Pro%20–%201.png" height="300" />
 <img src="documentatie/iPhone%20X-XS-11%20Pro%20–%202.png" height="300" />
 <img src="documentatie/iPhone%20X-XS-11%20Pro%20–%204.png" height="300" />
