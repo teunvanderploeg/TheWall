@@ -1,15 +1,12 @@
-## TheWall
-Dit project heb ik voor school gemaakt als project 
-[TheWall](http://29253.hosts2.ma-cloud.nl/TheWall/website/index.php "TheWall Website"). 
-Het was de bedoeling om een soort socialmedia platform te maken waarop mensen foto's konden delen.
+# TheWall
+TheWall is een social media platform waar gebruikers foto's kunnen delen en met elkaar kunnen communiceren. Dit project is gemaakt als een schoolproject met als doel het creëren van een interactief platform voor het delen van foto's.
 
-
-Dit is de styletile:
+## Styletile
 <br>
 <img src="documentatie/Styletile.png" height="300" />
 <br>
 
-Dit zijn de Wireframes:
+## Wireframes
 <br>
 <img src="documentatie/iPhone%20X-XS-11%20Pro%20–%201.png" height="300" />
 <img src="documentatie/iPhone%20X-XS-11%20Pro%20–%202.png" height="300" />
@@ -18,7 +15,3 @@ Dit zijn de Wireframes:
 <img src="documentatie/iPhone%20X-XS-11%20Pro%20–%205.png" height="300" />
 <br>
 <img src="documentatie/Web%201920%20–%201.png" height="300" />
-
-
-### Gemaakt door
-Teun en Romer
