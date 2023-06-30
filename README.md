@@ -21,4 +21,4 @@ Dit zijn de Wireframes:
 
 
 ### Gemaakt door
-Teun van der Ploeg en Romer Bormann
+Teun en Romer
